@@ -40,7 +40,7 @@ gem 'validates_timeliness', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 10.0.1'
 
   gem 'rspec-rails', '~> 3.4.0'
 end
@@ -58,6 +58,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'bullet', '~> 4.14.10'
+  gem 'bullet', '~> 5.7.5'
 end
 
