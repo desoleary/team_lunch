@@ -15,8 +15,8 @@ bundle
 ### Setup the database
 
 ```ruby
-rake rspec db:migrate
-rake rspec db:populate
+bin/rake db:migrate
+bin/rake db:populate
 ```
 
 ### Run the application
