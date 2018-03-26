@@ -1,0 +1,11 @@
+<%= simple_form_for @stock, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :quantity %>
+  <%= f.association :restaurant %>
+  <%= f.association :dietary_restriction %>
+
+  <%= f.button :submit, :class => 'btn btn-success' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                stocks_path, :class => 'btn btn-default' %>
+<% end %>

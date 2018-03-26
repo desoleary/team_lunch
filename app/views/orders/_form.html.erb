@@ -1,0 +1,21 @@
+<%= simple_form_for @order, :html => { :class => 'form-horizontal' } do |f| %>
+    <% if @order.errors.any? %>
+        <div class="flash-alert alert alert-danger">
+          <h4>Please review the problems below:</h4>
+      <span class="alert-message">
+              <ul>
+                <% @order.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+      </span>
+        </div>
+    <% end %>
+
+  <%= f.input :order_date %>
+  <%= f.association :team %>
+
+  <%= f.button :submit, :class => 'btn btn-success' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                orders_path, :class => 'btn btn-default' %>
+<% end %>

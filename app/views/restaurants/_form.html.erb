@@ -1,0 +1,10 @@
+<%= simple_form_for @restaurant, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+  <%= f.input :rating, :collection => 1..5 %>
+
+  <%= f.button :submit, :class => 'btn btn-success' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                restaurants_path, :class => 'btn btn-default' %>
+<% end %>
