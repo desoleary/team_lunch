@@ -23,4 +23,4 @@ bin/rake db:populate
 
 ```ruby
 rails s
-```# team_lunch
+```
