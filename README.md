@@ -9,7 +9,7 @@ It is more complex than otherwise could have performed, I realize this but wante
 ## Download the application
 
 ```ruby
-git clone https://github.com/daroleary/team_lunch
+git@github.com:desoleary/team_lunch.git
 bundle
 ```
 ### Setup the database
