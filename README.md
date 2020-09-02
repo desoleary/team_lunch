@@ -6,10 +6,8 @@ It is more complex than otherwise could have performed, I realize this but wante
 ## Installation
 #### Installing and running team lunch application
 
-## Download the application
-
 ```ruby
-git@github.com:desoleary/team_lunch.git
+git clone git@github.com:desoleary/team_lunch.git
 bundle
 ```
 ### Setup the database
